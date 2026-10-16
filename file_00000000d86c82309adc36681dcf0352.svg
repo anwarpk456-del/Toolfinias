@@ -1,0 +1,285 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1060" width="1600" height="1060">
+  <defs>
+    <!-- Background glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="55%" r="40%">
+      <stop offset="0%" stop-color="#e0f2fe" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#f0f9ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gemini Title Gradient -->
+    <linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a73e8"/>
+      <stop offset="35%" stop-color="#4285f4"/>
+      <stop offset="65%" stop-color="#d93025"/>
+      <stop offset="85%" stop-color="#ea4335"/>
+      <stop offset="100%" stop-color="#a142f4"/>
+    </linearGradient>
+
+    <!-- 18 Months Pill Gradient -->
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff"/>
+      <stop offset="100%" stop-color="#0052cc"/>
+    </linearGradient>
+
+    <!-- Prismatic Diamond Star Gradients -->
+    <linearGradient id="starTop" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="40%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+
+    <linearGradient id="starRight" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="60%" stop-color="#d946ef"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <linearGradient id="starBottom" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="70%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+
+    <linearGradient id="starLeft" x1="100%" y1="50%" x2="0%" y2="50%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- Card Shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+
+    <filter id="pedestalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.18"/>
+    </filter>
+
+    <!-- Flow Icon Gradient -->
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="35%" stop-color="#ef4444"/>
+      <stop offset="70%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Pure White Background -->
+  <rect width="1600" height="1060" fill="#ffffff"/>
+  <rect width="1600" height="1060" fill="url(#bgGlow)"/>
+
+  <!-- ==================== TOP LOGO ==================== -->
+  <g transform="translate(680, 26)">
+    <!-- Blue 'T' Logo Mark -->
+    <path d="M 0 6 C 0 2.7 2.7 0 6 0 L 36 0 C 39.3 0 42 2.7 42 6 C 42 9.3 39.3 12 36 12 L 27 12 L 27 34 C 27 37.3 24.3 40 21 40 C 17.7 40 15 37.3 15 34 L 15 12 L 6 12 C 2.7 12 0 9.3 0 6 Z" fill="#0099ff"/>
+    <circle cx="9" cy="6" r="5" fill="#38bdf8"/>
+    <!-- Brand Wordmark -->
+    <text x="52" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="34" font-weight="900" fill="#0b1a30" letter-spacing="-0.5">Tool<tspan fill="#1e293b">Finia</tspan></text>
+  </g>
+
+  <!-- ==================== MAIN HEADLINE ==================== -->
+  <g transform="translate(800, 155)" text-anchor="middle">
+    <!-- Gemini AI Pro -->
+    <text font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="88" font-weight="900" letter-spacing="-1.5">
+      <tspan fill="url(#geminiGrad)">Gemini </tspan>
+      <tspan fill="#0b192c">AI Pro</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== PILL BADGE WITH RAYS ==================== -->
+  <g transform="translate(800, 240)">
+    <!-- Left Radiant Rays -->
+    <g stroke="#0077ff" stroke-width="4.5" stroke-linecap="round">
+      <line x1="-285" y1="0" x2="-250" y2="0"/>
+      <line x1="-275" y1="-22" x2="-245" y2="-12"/>
+      <line x1="-275" y1="22" x2="-245" y2="12"/>
+    </g>
+
+    <!-- Pill Container -->
+    <rect x="-225" y="-38" width="450" height="76" rx="38" fill="url(#pillGrad)"/>
+
+    <!-- Bengali Text inside Pill -->
+    <text x="0" y="14" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="1">
+      ১৮ মাসের জন্য
+    </text>
+
+    <!-- Right Radiant Rays -->
+    <g stroke="#0077ff" stroke-width="4.5" stroke-linecap="round">
+      <line x1="250" y1="0" x2="285" y2="0"/>
+      <line x1="245" y1="-12" x2="275" y2="-22"/>
+      <line x1="245" y1="12" x2="275" y2="22"/>
+    </g>
+  </g>
+
+  <!-- ==================== LEFT CARDS (3 CARDS) ==================== -->
+  
+  <!-- Card 1: Antigravity Apped Model -->
+  <g transform="translate(90, 310)" filter="url(#cardShadow)">
+    <rect width="365" height="116" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.8"/>
+    <!-- Icon -->
+    <rect x="18" y="18" width="80" height="80" rx="20" fill="#0d1117"/>
+    <!-- Sparkle Star in Icon -->
+    <path d="M 58 36 Q 58 58 36 58 Q 58 58 58 80 Q 58 58 80 58 Q 58 58 58 36 Z" fill="#ffffff"/>
+    <circle cx="70" cy="44" r="3" fill="#38bdf8"/>
+    <!-- Content -->
+    <text x="114" y="52" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" font-weight="800" fill="#0f172a">Antigravity</text>
+    <text x="114" y="72" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" font-weight="800" fill="#0f172a">Apped Model</text>
+    <text x="114" y="93" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12.5" font-weight="500" fill="#64748b">Next-gen creativity and productivity</text>
+  </g>
+
+  <!-- Card 2: Veo 3 -->
+  <g transform="translate(90, 455)" filter="url(#cardShadow)">
+    <rect width="365" height="116" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.8"/>
+    <!-- Icon -->
+    <rect x="18" y="18" width="80" height="80" rx="20" fill="#0066ff"/>
+    <!-- Swirl Icon -->
+    <g transform="translate(58, 58) scale(1.3)" stroke="#ffffff" stroke-width="2.8" fill="none" stroke-linecap="round">
+      <path d="M-8,-4 A9,9 0 0,1 4,-8 A9,9 0 0,1 8,4 A9,9 0 0,1 -4,8 A9,9 0 0,1 -8,-4"/>
+      <circle cx="0" cy="0" r="3.5" fill="#ffffff"/>
+    </g>
+    <!-- Content -->
+    <text x="114" y="58" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="#0f172a">Veo 3</text>
+    <text x="114" y="82" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748b">Advanced video</text>
+    <text x="114" y="98" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748b">generation</text>
+  </g>
+
+  <!-- Card 3: Google Flow with OmniFlash -->
+  <g transform="translate(90, 600)" filter="url(#cardShadow)">
+    <rect width="365" height="116" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.8"/>
+    <!-- Icon -->
+    <rect x="18" y="18" width="80" height="80" rx="20" fill="url(#flowGrad)"/>
+    <text x="58" y="70" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="44" font-weight="900" fill="#ffffff">F</text>
+    <!-- Content -->
+    <text x="114" y="48" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" font-weight="800" fill="#0f172a">Google Flow</text>
+    <text x="114" y="68" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="15" font-weight="700" fill="#0f172a">with OmniFlash</text>
+    <text x="114" y="88" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="500" fill="#64748b">Create, edit, and</text>
+    <text x="114" y="103" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="500" fill="#64748b">bring your ideas to life</text>
+  </g>
+
+  <!-- ==================== CENTER 3D GEMINI STAR & PEDESTAL ==================== -->
+  
+  <!-- Pedestal Floor Glow -->
+  <ellipse cx="800" cy="745" rx="240" ry="40" fill="#0284c7" opacity="0.12"/>
+  
+  <!-- Pedestal Base Structure -->
+  <g transform="translate(800, 690)" filter="url(#pedestalShadow)">
+    <!-- Lower cylinder ring -->
+    <ellipse cx="0" cy="40" rx="210" ry="32" fill="#e2e8f0"/>
+    <path d="M -210 10 L -210 40 A 210 32 0 0 0 210 40 L 210 10 Z" fill="#ffffff"/>
+    <path d="M -210 10 L -210 40 A 210 32 0 0 0 210 40 L 210 10 Z" fill="url(#bgGlow)"/>
+
+    <!-- Glowing cyan rim layer -->
+    <ellipse cx="0" cy="10" rx="205" ry="30" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2.5"/>
+    <ellipse cx="0" cy="4" rx="190" ry="26" fill="#f8fafc"/>
+    <ellipse cx="0" cy="0" rx="175" ry="22" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Embossed Gemini Text -->
+    <text x="0" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="34" font-weight="800" fill="#334155" letter-spacing="-0.5">Gemini</text>
+  </g>
+
+  <!-- 3D Iridescent Star (Diamond 4-Pointed) -->
+  <g transform="translate(800, 520)">
+    <!-- Ambient Star Glow behind -->
+    <circle cx="0" cy="0" r="140" fill="#38bdf8" opacity="0.25" filter="blur(30px)"/>
+
+    <!-- Star Facets -->
+    <!-- Top-Left Facet -->
+    <path d="M 0 -165 Q 0 -50 -165 0 Q -50 0 0 0 Z" fill="url(#starTop)"/>
+    <!-- Top-Right Facet -->
+    <path d="M 0 -165 Q 0 -50 165 0 Q 50 0 0 0 Z" fill="url(#starRight)"/>
+    <!-- Bottom-Right Facet -->
+    <path d="M 0 165 Q 0 50 165 0 Q 50 0 0 0 Z" fill="url(#starBottom)"/>
+    <!-- Bottom-Left Facet -->
+    <path d="M 0 165 Q 0 50 -165 0 Q -50 0 0 0 Z" fill="url(#starLeft)"/>
+
+    <!-- Inner Refraction Ridge & Lustre -->
+    <path d="M 0 -165 L 0 165" stroke="#ffffff" stroke-width="3" opacity="0.65"/>
+    <path d="M -165 0 L 165 0" stroke="#ffffff" stroke-width="3" opacity="0.65"/>
+
+    <!-- Prismatic Core Star Specular Highlights -->
+    <circle cx="0" cy="0" r="28" fill="#ffffff" opacity="0.4" filter="blur(8px)"/>
+    <circle cx="-20" cy="-20" r="14" fill="#ffffff" opacity="0.75" filter="blur(4px)"/>
+    <polygon points="0,-165 6,-40 24,0 6,40 0,165 -6,40 -24,0 -6,-40" fill="#ffffff" opacity="0.2"/>
+  </g>
+
+  <!-- ==================== RIGHT CARDS (2 CARDS) ==================== -->
+
+  <!-- Card 1: Nano Banana Pro -->
+  <g transform="translate(1145, 330)" filter="url(#cardShadow)">
+    <rect width="365" height="116" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.8"/>
+    <!-- Icon -->
+    <rect x="18" y="18" width="80" height="80" rx="20" fill="#0066ff"/>
+    <!-- Origami Crane Geometry -->
+    <g transform="translate(58, 58)" fill="#ffffff">
+      <polygon points="0,-22 -18,12 18,12" opacity="0.95"/>
+      <polygon points="0,-22 0,12 20,-4" opacity="0.7"/>
+      <polygon points="0,-22 -20,-4 0,12" opacity="0.8"/>
+    </g>
+    <!-- Content -->
+    <text x="114" y="55" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="20" font-weight="800" fill="#0f172a">Nano Banana Pro</text>
+    <text x="114" y="80" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748b">Advanced image</text>
+    <text x="114" y="97" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748b">creation &amp; editing</text>
+  </g>
+
+  <!-- Card 2: Google AI Studio -->
+  <g transform="translate(1145, 480)" filter="url(#cardShadow)">
+    <rect width="365" height="116" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.8"/>
+    <!-- Icon -->
+    <rect x="18" y="18" width="80" height="80" rx="20" fill="#0055d4"/>
+    <circle cx="58" cy="58" r="32" fill="#0040aa"/>
+    <text x="58" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="20" font-weight="900" fill="#ffffff">AI</text>
+    <text x="58" y="70" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Studio</text>
+    <!-- Content -->
+    <text x="114" y="55" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="20" font-weight="800" fill="#0f172a">Google AI Studio</text>
+    <text x="114" y="80" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748b">Build and experiment</text>
+    <text x="114" y="97" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748b">with AI</text>
+  </g>
+
+  <!-- ==================== TRUST PILL BADGES ==================== -->
+  <g transform="translate(1125, 650)">
+    <!-- Badge 1: ইনস্ট্যান্ট ডেলিভারি -->
+    <g transform="translate(0, 0)">
+      <rect width="138" height="42" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+      <path d="M 24 13 L 16 23 L 23 23 L 19 31 L 28 20 L 21 20 Z" fill="#0f172a"/>
+      <text x="35" y="27" font-family="'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a">ইনস্ট্যান্ট</text>
+      <text x="88" y="27" font-family="'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a">ডেলিভারি</text>
+    </g>
+
+    <!-- Badge 2: নিরাপদ 24x7 -->
+    <g transform="translate(148, 0)">
+      <rect width="128" height="42" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+      <path d="M 22 13 L 30 16 L 30 23 C 30 28 26 31 22 33 C 18 31 14 28 14 23 L 14 16 Z" fill="none" stroke="#0f172a" stroke-width="2"/>
+      <path d="M 19 23 L 21 25 L 26 20" fill="none" stroke="#0f172a" stroke-width="2"/>
+      <text x="37" y="22" font-family="'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a">নিরাপদ</text>
+      <text x="37" y="34" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#0f172a">24x7</text>
+    </g>
+
+    <!-- Badge 3: ১২ মাসের গ্যারান্টি -->
+    <g transform="translate(286, 0)">
+      <rect width="138" height="42" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+      <circle cx="24" cy="20" r="7" fill="none" stroke="#0f172a" stroke-width="2"/>
+      <path d="M 21 26 L 19 32 L 24 30 L 29 32 L 27 26" fill="none" stroke="#0f172a" stroke-width="1.8"/>
+      <text x="37" y="22" font-family="'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">১২ মাসের</text>
+      <text x="37" y="34" font-family="'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">গ্যারান্টি</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM SLOGAN & RIBBON ==================== -->
+  <g transform="translate(800, 890)" text-anchor="middle">
+    <!-- Cursive slogan -->
+    <text font-family="'Brush Script MT', 'Dancing Script', 'Caveat', cursive, sans-serif" font-size="34" font-weight="700" fill="#0066ff" font-style="italic">
+      Work Smarter   •   Create Faster   •   With Gemini AI Pro
+    </text>
+    <!-- Sub-slogan -->
+    <text y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16.5" font-weight="500" fill="#64748b" letter-spacing="0.2">
+      Powerful AI tools. Limitless possibilities.
+    </text>
+  </g>
+
+  <!-- Google Wave Rainbow Ribbon on Bottom -->
+  <path d="M 0 830 Q 400 860 800 820 T 1600 835" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.6"/>
+  <path d="M 0 834 Q 400 864 800 824 T 1600 839" fill="none" stroke="#22c55e" stroke-width="3" opacity="0.5"/>
+  <path d="M 0 838 Q 400 868 800 828 T 1600 843" fill="none" stroke="#f59e0b" stroke-width="3" opacity="0.5"/>
+  <path d="M 0 842 Q 400 872 800 832 T 1600 847" fill="none" stroke="#ef4444" stroke-width="3" opacity="0.5"/>
+</svg>

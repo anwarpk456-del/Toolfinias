@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 130 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Brushed Silver / Chrome Gradients -->
+    <linearGradient id="embSilverHighlight" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#e9eef5"/>
+      <stop offset="45%" stop-color="#b0bccd"/>
+      <stop offset="60%" stop-color="#6e7d91"/>
+      <stop offset="80%" stop-color="#9aa7ba"/>
+      <stop offset="100%" stop-color="#3a4452"/>
+    </linearGradient>
+
+    <linearGradient id="embSilverFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="30%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#94a3b8"/>
+      <stop offset="85%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <linearGradient id="embBevelLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#cbd5e1" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- 3D Cast Shadows -->
+    <filter id="embShadow3D" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7"/>
+      <feDropShadow dx="-1" dy="-1" stdDeviation="2" flood-color="#ffffff" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== 3D METALLIC EMBLEM ==================== -->
+  <g filter="url(#embShadow3D)">
+    
+    <!-- Outer Bevel Extrusion Rim (Dark base under metallic plate) -->
+    <g fill="#1a1e26" stroke="#2a3240" stroke-width="3">
+      <path d="M 390 145 C 265 145 165 245 165 370 C 165 495 265 595 390 595 C 515 595 615 495 615 370 C 615 245 515 145 390 145 Z"/>
+    </g>
+
+    <!-- LEFT HEMISPHERE: GLOBE MESH WITH LETTER "T" -->
+    <!-- Globe Outer Arc Left -->
+    <path d="M 385 160 
+             C 275 160 185 250 185 365 
+             C 185 480 275 570 385 570 
+             L 385 530 
+             C 295 530 225 455 225 365 
+             C 225 275 295 200 385 200 Z" 
+          fill="url(#embSilverFace)" stroke="url(#embBevelLight)" stroke-width="2.5"/>
+
+    <!-- Left Top Gear Tooth on the Globe Arc -->
+    <path d="M 270 195 L 290 155 L 340 165 L 330 205 Z" 
+          fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2"/>
+
+    <!-- Central Vertical Pillar of the "T" Monogram -->
+    <path d="M 360 160 L 395 160 L 395 570 L 360 570 Z" 
+          fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="3"/>
+
+    <!-- Globe Inner Meridian Longitude Rib (Curved Left) -->
+    <path d="M 360 200 
+             C 280 230 245 300 245 365 
+             C 245 430 280 500 360 530 
+             L 360 495 
+             C 305 465 280 415 280 365 
+             C 280 315 305 265 360 235 Z" 
+          fill="url(#embSilverFace)" stroke="url(#embBevelLight)" stroke-width="2"/>
+
+    <!-- Globe Latitude Bar 1 (Upper Horizontal Rib) -->
+    <path d="M 235 275 L 360 275 L 360 250 L 255 250 Z" 
+          fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2"/>
+
+    <!-- Globe Latitude Bar 2 (Equator Rib) -->
+    <path d="M 195 365 L 360 365 L 360 345 L 195 345 Z" 
+          fill="url(#embSilverFace)" stroke="url(#embBevelLight)" stroke-width="2"/>
+
+    <!-- Globe Latitude Bar 3 (Lower Horizontal Rib) -->
+    <path d="M 235 455 L 360 455 L 360 480 L 255 480 Z" 
+          fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2"/>
+
+
+    <!-- RIGHT HEMISPHERE: GEAR RIM & WINGED MONOGRAM "F" -->
+    <!-- Gear Outer Arch Connecting Teeth -->
+    <path d="M 405 195 C 495 195 565 265 565 365 C 565 465 495 535 405 535 L 405 570 C 515 570 605 480 605 365 C 605 250 515 160 405 160 Z" 
+          fill="url(#embSilverFace)" stroke="url(#embBevelLight)" stroke-width="2.5"/>
+
+    <!-- Gear Teeth (Distinct 5 mechanical teeth extending outwards) -->
+    <!-- Tooth 1 (Top-Right) -->
+    <path d="M 435 162 L 465 145 L 490 180 L 465 195 Z" fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2"/>
+    <!-- Tooth 2 (Upper-Right) -->
+    <path d="M 520 205 L 560 220 L 550 260 L 515 245 Z" fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2"/>
+    <!-- Tooth 3 (Middle-Right) -->
+    <path d="M 565 335 L 610 350 L 605 395 L 565 385 Z" fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2"/>
+    <!-- Tooth 4 (Lower-Right) -->
+    <path d="M 535 465 L 565 500 L 530 530 L 505 500 Z" fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2"/>
+    <!-- Tooth 5 (Bottom-Right) -->
+    <path d="M 445 540 L 460 580 L 420 588 L 415 548 Z" fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2"/>
+
+    <!-- Vertical Stem of the "F" Monogram -->
+    <path d="M 405 165 L 435 165 L 435 565 L 405 565 Z" 
+          fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="3"/>
+
+    <!-- Top Wing Blade of "F" (Sweeping Aerodynamic Wing with Feathers) -->
+    <path d="M 435 220 
+             L 575 220 
+             C 595 220 590 250 560 260 
+             L 490 275 
+             L 540 285 
+             C 560 290 550 315 525 320 
+             L 435 330 Z" 
+          fill="url(#embSilverFace)" stroke="url(#embBevelLight)" stroke-width="2.5"/>
+
+    <!-- Lower Wing Feather of "F" -->
+    <path d="M 435 365 
+             L 515 365 
+             C 535 365 530 395 505 405 
+             L 435 415 Z" 
+          fill="url(#embSilverHighlight)" stroke="url(#embBevelLight)" stroke-width="2.5"/>
+
+    <!-- Inner Core Mechanical Cavity (Depth Groove) -->
+    <path d="M 435 440 L 480 440 C 495 445 490 465 470 470 L 435 475 Z" 
+          fill="url(#embSilverFace)" stroke="url(#embBevelLight)" stroke-width="2"/>
+  </g>
+</svg>
